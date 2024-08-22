@@ -1,1 +1,11 @@
-{}
+{
+   "items": [
+      {
+         "id": 1,
+         "name": "T-shirts",
+         "image": "./images/t-shirts.jpg",
+         "category": "Clothes",
+         "price": 10
+      }
+    ]
+}
