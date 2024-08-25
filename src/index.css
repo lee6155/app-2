@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card img {
+  height: 250px;
+  width: 250px;
+}
+
+.card {
+  float: left;
+  padding-top: 85px;
+}
+
+#categoryDropdown {
+  position: absolute;
+  padding-left: 40px
+}
