@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import ItemCard from "../components/ItemCard"
 import CategoryFilter from "../components/CategoryFilter"
+import NavBar from "../components/NavBar"
 
 function HomePage() {
     const [items, setItemsState] = useState([])
@@ -21,8 +22,9 @@ function HomePage() {
 
     return(
         <div>
+            <NavBar/>
+            <CategoryFilter passCategoryItems={passCategoryItems}/>
             {displayItems}
-            <CategoryFilter items={items} passCategoryItems={passCategoryItems}/>
         </div>
     )
 }

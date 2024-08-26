@@ -7,6 +7,7 @@ function ItemCard({ name, image, price }) {
                 <img src={image} alt={name} />
                 <h4>{name}</h4>
                 <p>Price: ${price}</p>
+                <button>More Information</button>
             </ul>
         </div>
     )

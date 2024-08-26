@@ -15,14 +15,20 @@ code {
 .card img {
   height: 250px;
   width: 250px;
+  padding-top: 50px;
 }
 
 .card {
   float: left;
-  padding-top: 85px;
 }
 
 #categoryDropdown {
-  position: absolute;
-  padding-left: 40px
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+#navBar {
+  font-size: 30px;
+  padding-left: 40px;
+  padding-top: 20px;
 }

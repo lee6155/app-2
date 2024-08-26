@@ -1,17 +1,23 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 
-function CategoryFilter({ items, passCategoryItems }) {
+function CategoryFilter({ passCategoryItems }) {
+    const [forFilter, setForFilter] = useState([])
+
+    fetch("http://localhost:3000/items")
+    .then(response => response.json())
+    .then(data => setForFilter(data))
+         
     function handleChange(event) {
         if(event.target.value !== "All") {
-            const categoryItems = items.filter(function(item){
+            const categoryItems = forFilter.filter(function(item){
                 return item.category === event.target.value                
             })
             return passCategoryItems(categoryItems)
+
         } else {
-            const categoryItems = items
+            const categoryItems = forFilter
             return passCategoryItems(categoryItems)
-        }
-        
+        }   
     }
 
     return(
