@@ -6,7 +6,7 @@ function NavBar() {
     return(
         <nav id="navBar">
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/cart">Cart</NavLink>
+            <NavLink to="/cart" id="cartLink">Cart</NavLink>
         </nav>
     )
 }

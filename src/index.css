@@ -32,3 +32,38 @@ code {
   padding-left: 40px;
   padding-top: 20px;
 }
+
+#cartLink {
+  padding-left: 20px;
+}
+
+#cartButton {
+  margin-bottom: 20px;
+}
+
+#cartDropdown {
+  margin-left: 5px;
+}
+
+.cartImg {
+  height: 125px;
+  width: 125px;
+}
+
+.cartItem {
+  float: left;
+  padding-top: 50px;
+}
+
+.cartPrice {
+  margin-top: -10px;
+}
+
+.cartQuantity {
+  margin-top: -6px;
+}
+
+#total {
+  font-size: 20px;
+  padding-left: 40px;
+}

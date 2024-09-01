@@ -6,10 +6,16 @@ function App() {
 
   return (
     <div>
-      <HomePage/>
-      <Cart/>
+        <HomePage/>
+        <Cart/>
     </div>
   )
 }
 
 export default App
+
+// ReactDOM.render(
+//     <BrowserRouter>
+//         <App />
+//     </BrowserRouter>, document.getElementById("root")
+// )
