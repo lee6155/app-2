@@ -1,91 +1,133 @@
 {
   "items": [
     {
-      "id": 1,
-      "name": "T-shirts",
-      "image": "./images/t-shirts.jpg",
-      "category": "Clothes",
-      "price": 15
+      "id": "1",
+      "name": "Microwave",
+      "image": "./images/microwave.jpg",
+      "category": "Appliances",
+      "price": 150,
+      "materials": "Stainless steel, plastic",
+      "capacity": "8 gallons",
+      "dimensions": "L x W x H: 22 inches x 20 inches x 12 inches",
+      "power": "1000 Watts",
+      "warranty": "2 years"
     },
     {
-      "id": 2,
-      "name": "Shoes",
-      "image": "./images/shoes.jpg",
-      "category": "Clothes",
-      "price": 70
+      "id": "2",
+      "name": "Refrigerator",
+      "image": "./images/refrigerator.jpg",
+      "category": "Appliances",
+      "price": 1500,
+      "materials": "Stainless steel",
+      "capacity": "165 gallons",
+      "dimensions": "L x W x H: 33 inches x 35 inches x 67 inches",
+      "warranty": "3 years"
     },
     {
-      "id": 3,
-      "name": "Jeans",
-      "image": "./images/jeans.jpg",
-      "category": "Clothes",
-      "price": 50
+      "id": "3",
+      "name": "Toaster",
+      "image": "./images/toaster.jpg",
+      "category": "Appliances",
+      "price": 40,
+      "materials": "Stainless steel, plastic",
+      "dimensions": "L x W x H: 6 inches x 11 inches x 7 inches",
+      "warranty": "1 year"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Apples",
       "image": "./images/apples.jpg",
       "category": "Food",
-      "price": 5
+      "price": 5,
+      "type": "Red Delicious",
+      "weight": "3 pounds",
+      "organic": "Yes"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Broccoli",
       "image": "./images/Broccoli.jpg",
       "category": "Food",
-      "price": 4
+      "price": 3,
+      "weight": "0.5 pounds",
+      "organic": "Yes"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Eggs",
       "image": "./images/eggs.jpg",
       "category": "Food",
-      "price": 10
+      "price": 10,
+      "type": "Brown",
+      "organic": "Yes"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "TV",
       "image": "./images/TV.jpg",
       "category": "Electronics",
-      "price": 500
+      "price": 500,
+      "dimensions": "L x H: 58 inches x 36 inches",
+      "diagonalLength": "65 inches",
+      "display": "LED 4K Ultra HD",
+      "mountable": "Yes",
+      "warranty": "2 years"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Laptop",
       "image": "./images/laptop.jpg",
       "category": "Electronics",
-      "price": 700
+      "price": 800,
+      "diagonalLength": "14 inches",
+      "storage": "512 GB",
+      "display": "OLED", 
+      "touchScreen": "Yes",
+      "warranty": "2 years"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Headphones",
       "image": "./images/headphones.jpg",
       "category": "Electronics",
-      "price": 250
+      "price": 250,
+      "noiseCancelling": "Yes",
+      "bluetooth": "Yes",
+      "rechargeable": "No",
+      "warranty": "1 year"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Sofa",
       "image": "./images/Sofa.jpg",
       "category": "Home",
-      "price": 450
+      "price": 450,
+      "fabric": "Polyester",
+      "dimensions": "L x W x H: 78 inches x 32 inches x 35 inches",
+      "pullOutBed": "Yes"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Lamp",
       "image": "./images/lamp.jpg",
       "category": "Home",
-      "price": 45
+      "price": 75,
+      "dimensions": "Height: 27 inches, Diameter: 19 inches",
+      "materials": "Shade: Linen, Base: Concrete",
+      "plugIn": "Yes"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Dining Room Table",
       "image": "./images/table.jpg",
       "category": "Home",
-      "price": 1000
+      "price": 1000,
+      "materials": "Hickory & Cherry wood, leather",
+      "dimensions": "L x W x H, Table: 78 in x 45 in x 30 in, Chair: 22 in x 25 in x 40 in",
+      "color": "Cherry"
     }
   ],
   "cart": [
-    
+  
   ]
 }

@@ -67,3 +67,18 @@ code {
   font-size: 20px;
   padding-left: 40px;
 }
+
+.infoPage {
+  text-align: center;
+}
+
+.infoImg {
+  height: 350px;
+  width: 350px;
+  padding-top: 40px;
+}
+
+.info {
+  display: inline-block;
+  text-align: left;
+}

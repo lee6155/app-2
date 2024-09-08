@@ -1,7 +1,12 @@
-import React from "react"
+import React, { useState } from "react"
+import { Link } from "react-router-dom"
 
-function ItemCard({ name, image, price }) {
+function ItemCard({ id, name, image, price }) {
+    const [isAdded, setIsAdded] = useState(false)
+    
     function handleClick(event) {
+        setIsAdded(true)
+
         const cartData = {
             image2: event.target.parentElement.children[0].attributes[0].value,
             name2: event.target.parentElement.children[1].innerText,
@@ -31,7 +36,9 @@ function ItemCard({ name, image, price }) {
                 <img src={image} alt={name} />
                 <h4>{name}</h4>
                 <p>Price: ${price}</p>
-                <button onClick={handleClick} id="cartButton">Add to Cart</button>
+                <button onClick={handleClick} disabled={isAdded} id="cartButton">
+                    {isAdded ? "Added" : "Add to Cart"}
+                </button>
                 <select id="cartDropdown">
                     <option>1</option>
                     <option>2</option>
@@ -40,7 +47,7 @@ function ItemCard({ name, image, price }) {
                     <option>5</option>
                 </select>
                 <div>
-                    <button>More Information</button>
+                    <Link to={`/information/${id}`}>More Information</Link>
                 </div>
             </ul>
         </div>

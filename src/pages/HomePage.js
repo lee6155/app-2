@@ -13,7 +13,7 @@ function HomePage() {
     },[])
 
     let displayItems = items.map(function(item){
-        return <ItemCard key={item.id} name={item.name} image={item.image} price={item.price}/>
+        return <ItemCard key={item.id} id={item.id} name={item.name} image={item.image} price={item.price}/>
     })
 
     function passCategoryItems(newState) {

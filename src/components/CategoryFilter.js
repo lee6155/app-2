@@ -25,7 +25,7 @@ function CategoryFilter({ passCategoryItems }) {
             <p>Filter By Category:</p>
             <select onChange={handleChange}>
                 <option>All</option>
-                <option>Clothes</option>
+                <option>Appliances</option>
                 <option>Food</option>
                 <option>Electronics</option>
                 <option>Home</option>
