@@ -1,21 +1,21 @@
 import React, { useState } from "react"
 
-function CategoryFilter({ passCategoryItems }) {
-    const [forFilter, setForFilter] = useState([])
+function CategoryFilter({ passCategoryItems, items }) {
+    // const [forFilter, setForFilter] = useState([])
 
-    fetch("http://localhost:3000/items")
-    .then(response => response.json())
-    .then(data => setForFilter(data))
+    // fetch("http://localhost:3000/items")
+    // .then(response => response.json())
+    // .then(data => setForFilter(data))
          
     function handleChange(event) {
         if(event.target.value !== "All") {
-            const categoryItems = forFilter.filter(function(item){
+            const categoryItems = items.filter(function(item){
                 return item.category === event.target.value                
             })
             return passCategoryItems(categoryItems)
 
         } else {
-            const categoryItems = forFilter
+            const categoryItems = items
             return passCategoryItems(categoryItems)
         }   
     }
@@ -37,7 +37,5 @@ function CategoryFilter({ passCategoryItems }) {
 export default CategoryFilter
 
 
-// Get rid of second state & get request in category filter
 // controlled form should result in post, change in item state
 // itemcard should be a controlled form
-// move routes into separate file

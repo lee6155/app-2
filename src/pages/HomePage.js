@@ -5,25 +5,29 @@ import NavBar from "../components/NavBar"
 
 function HomePage() {
     const [items, setItemsState] = useState([])
+    const [filtered, setFiltered] = useState([])
 
     useEffect(() => {
         fetch("http://localhost:3000/items")
         .then(response => response.json())
-        .then(data => setItemsState(data))  
+        .then(function(data) {
+            setItemsState(data)
+            setFiltered(data)
+        })
     },[])
 
-    let displayItems = items.map(function(item){
+    let displayItems = filtered.map(function(item){
         return <ItemCard key={item.id} id={item.id} name={item.name} image={item.image} price={item.price}/>
     })
 
     function passCategoryItems(newState) {
-        return setItemsState(newState)
+        return setFiltered(newState)
     }
 
     return(
         <div>
             <NavBar/>
-            <CategoryFilter passCategoryItems={passCategoryItems}/>
+            <CategoryFilter items={items} passCategoryItems={passCategoryItems}/>
             {displayItems}
         </div>
     )
