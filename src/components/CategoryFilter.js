@@ -35,3 +35,9 @@ function CategoryFilter({ passCategoryItems }) {
 }
 
 export default CategoryFilter
+
+
+// Get rid of second state & get request in category filter
+// controlled form should result in post, change in item state
+// itemcard should be a controlled form
+// move routes into separate file
