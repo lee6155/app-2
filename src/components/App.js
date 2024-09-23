@@ -1,6 +1,7 @@
 import React from "react"
 import HomePage from "../pages/HomePage"
 import Cart from "../pages/Cart"
+import Account from "../pages/Account"
 
 function App() {
   
@@ -8,6 +9,7 @@ function App() {
     <div>
         <HomePage/>
         <Cart/>
+        <Account/>
     </div>
   )
 }

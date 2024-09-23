@@ -32,7 +32,7 @@ function ItemCard({ id, name, image, price }) {
 
     return (
         <div>
-            <ul class="card">
+            <ul class="itemCard">
                 <img src={image} alt={name} />
                 <h4>{name}</h4>
                 <p>Price: ${price}</p>

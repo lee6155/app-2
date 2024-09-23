@@ -81,7 +81,7 @@
       "price": 800,
       "diagonalLength": "14 inches",
       "storage": "512 GB",
-      "display": "OLED", 
+      "display": "OLED",
       "touchScreen": "Yes",
       "warranty": "2 years"
     },
@@ -127,7 +127,15 @@
       "color": "Cherry"
     }
   ],
-  "cart": [
-  
+  "cart": [],
+  "cards": [
+    {
+      "id": 1,
+      "type": "Credit",
+      "owner": "Bob Smith",
+      "cardNumber": "1234 5678 9123 4567",
+      "securityCode": "123",
+      "expiration": "12/2030"
+    }
   ]
 }

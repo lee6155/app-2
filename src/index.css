@@ -12,13 +12,17 @@ code {
     monospace;
 }
 
-.card img {
+
+
+
+
+.itemCard img {
   height: 250px;
   width: 250px;
   padding-top: 50px;
 }
 
-.card {
+.itemCard {
   float: left;
 }
 
@@ -34,6 +38,10 @@ code {
 }
 
 #cartLink {
+  padding-left: 20px;
+}
+
+#accountLink {
   padding-left: 20px;
 }
 
@@ -63,7 +71,7 @@ code {
   margin-top: -6px;
 }
 
-#total {
+#cartTotal {
   font-size: 20px;
   padding-left: 40px;
 }
@@ -81,4 +89,44 @@ code {
 .info {
   display: inline-block;
   text-align: left;
+}
+
+.cardInfo {
+  margin-bottom: -5px
+}
+
+#card {
+  margin-bottom: 40px;
+  margin-left: 80px;
+  float: left
+}
+
+#cardInfoHeading {
+  margin-left: 39px;
+  margin-bottom: 0px
+}
+
+#addCardHeading {
+  margin-left: 39px;
+  clear: left
+}
+
+#cardForm {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  clear: left
+}
+
+.cardFormInfo {
+  margin-bottom: 10px;
+}
+
+.cardFormInput {
+  margin-left: 5px;
+}
+
+#cardButton {
+  max-width: 80px;
+  margin-top: 5px;
 }

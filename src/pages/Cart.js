@@ -33,7 +33,7 @@ function Cart() {
         <div>
             <NavBar/>
             {renderCart}
-            <h4 style={{clear: "both"}} id="total">Total: ${total}</h4>
+            <h4 style={{clear: "both"}} id="cartTotal">Total: ${total}</h4>
         </div>
     )
 }
