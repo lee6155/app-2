@@ -35,7 +35,3 @@ function CategoryFilter({ passCategoryItems, items }) {
 }
 
 export default CategoryFilter
-
-
-// controlled form should result in post, change in item state
-// itemcard should be a controlled form
