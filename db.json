@@ -137,5 +137,16 @@
       "securityCode": "123",
       "expiration": "12/2030"
     }
+  ],
+  "addresses": [
+    {
+      "id": 1,
+      "name": "Bob Smith",
+      "street": "123 Broadway",
+      "apartment": "12C",
+      "city": "New York",
+      "state": "New York",
+      "zipCode": "10012"
+    }
   ]
 }

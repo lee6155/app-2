@@ -130,3 +130,45 @@ code {
   max-width: 80px;
   margin-top: 5px;
 }
+
+.addressInfo {
+  margin-bottom: -5px
+}
+
+#address {
+  margin-bottom: 40px;
+  margin-left: 80px;
+  float: left
+}
+
+#addressInfoHeading {
+  margin-left: 39px;
+  margin-bottom: 0px;
+  margin-top: 38px
+}
+
+#addAddressHeading {
+  margin-left: 39px;
+  clear: left
+}
+
+#addressForm {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  clear: left
+}
+
+.addressFormInfo {
+  margin-bottom: 10px;
+}
+
+.addressFormInput {
+  margin-left: 5px;
+}
+
+#addressButton {
+  max-width: 80px;
+  margin-top: 5px;
+  margin-bottom: 40px
+}
