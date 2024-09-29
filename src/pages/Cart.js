@@ -16,7 +16,7 @@ function Cart() {
     })
 
     const priceArray = cartData.map(function(cartItem) {
-        return cartItem.price2.slice(8)
+        return cartItem.price2
     })
 
     const quantityArray = cartData.map(function(cartItem) {

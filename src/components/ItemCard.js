@@ -3,15 +3,20 @@ import { Link } from "react-router-dom"
 
 function ItemCard({ id, name, image, price }) {
     const [isAdded, setIsAdded] = useState(false)
-    
+    const [quantity, setQuantity] = useState("")
+
+    function handleChange (event) {
+        setQuantity(event.target.value)
+    }
+
     function handleClick(event) {
         setIsAdded(true)
 
         const cartData = {
-            image2: event.target.parentElement.children[0].attributes[0].value,
-            name2: event.target.parentElement.children[1].innerText,
-            price2: event.target.parentElement.children[2].innerText,
-            quantity2: event.target.parentElement.children[4].value
+            image2: image,
+            name2: name,
+            price2: price,
+            quantity2: quantity
         }
 
         fetch("http://localhost:3000/cart", {
@@ -39,7 +44,7 @@ function ItemCard({ id, name, image, price }) {
                 <button onClick={handleClick} disabled={isAdded} id="cartButton">
                     {isAdded ? "Added" : "Add to Cart"}
                 </button>
-                <select id="cartDropdown">
+                <select onChange={handleChange} disabled={isAdded} id="cartDropdown">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
