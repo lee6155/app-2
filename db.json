@@ -127,7 +127,15 @@
       "color": "Cherry"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": "d138",
+      "image2": "./images/refrigerator.jpg",
+      "name2": "Refrigerator",
+      "price2": "Price: $1500",
+      "quantity2": "1"
+    }
+  ],
   "cards": [
     {
       "id": 1,
