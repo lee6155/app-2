@@ -2,16 +2,13 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 
 function ItemCard({ id, name, image, price }) {
-    const [isAdded, setIsAdded] = useState(false)
-    const [quantity, setQuantity] = useState("")
+    const [quantity, setQuantity] = useState(1)
 
     function handleChange (event) {
         setQuantity(event.target.value)
     }
 
     function handleClick(event) {
-        setIsAdded(true)
-
         const cartData = {
             image2: image,
             name2: name,
@@ -41,10 +38,8 @@ function ItemCard({ id, name, image, price }) {
                 <img src={image} alt={name} />
                 <h4>{name}</h4>
                 <p>Price: ${price}</p>
-                <button onClick={handleClick} disabled={isAdded} id="cartButton">
-                    {isAdded ? "Added" : "Add to Cart"}
-                </button>
-                <select onChange={handleChange} disabled={isAdded} id="cartDropdown">
+                <button onClick={handleClick} id="cartButton">Add to Cart</button>
+                <select onChange={handleChange} id="cartDropdown">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
