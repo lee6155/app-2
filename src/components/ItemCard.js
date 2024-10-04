@@ -8,12 +8,12 @@ function ItemCard({ id, name, image, price }) {
         setQuantity(event.target.value)
     }
 
-    function handleClick(event) {
+    function handleClick() {
         const cartData = {
-            image2: image,
-            name2: name,
-            price2: price,
-            quantity2: quantity
+            image: image,
+            name: name,
+            price: price,
+            quantity: quantity
         }
 
         fetch("http://localhost:3000/cart", {
@@ -22,10 +22,10 @@ function ItemCard({ id, name, image, price }) {
                 "Content-Type": "application/json",
             },
             body: {
-                "image2": "string",
-                "name2": "string",
-                "price2": "string",
-                "quantity2": "integer",
+                "image": "string",
+                "name": "string",
+                "price": "string",
+                "quantity": "integer",
             },
             body: JSON.stringify(cartData)
         })

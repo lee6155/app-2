@@ -15,7 +15,7 @@ function AddressParent () {
         return <AddressDisplay key={address.id} name={address.name} street={address.street} apartment={address.apartment} city={address.city} state={address.state} zipCode={address.zipCode}/>
     })
 
-    function passAddress (address) {
+    function formAddressData (address) {
         setAddresses([...addresses, address])
     }
 
@@ -23,7 +23,7 @@ function AddressParent () {
         <div>
             <h2 id="addressInfoHeading">Address Information</h2>
             {displayAddresses}
-            <AddressForm passAddress={passAddress}/>
+            <AddressForm formAddressData={formAddressData}/>
         </div>
     )
 }

@@ -127,7 +127,8 @@
       "color": "Cherry"
     }
   ],
-  "cart": [],
+  "cart": [
+  ],
   "cards": [
     {
       "id": 1,

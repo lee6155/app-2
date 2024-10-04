@@ -1,9 +1,9 @@
-import React, { useState } from "react"
+import React from "react"
 
-function CategoryFilter({ passCategory }) {
+function CategoryFilter({ categoryFromDropdown }) {
 
     function handleChange(event) {
-        return passCategory(event.target.value)   
+        return categoryFromDropdown(event.target.value)   
     }
 
     return(

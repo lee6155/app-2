@@ -15,7 +15,7 @@ function CardParent () {
         return <CardDisplay key={card.id} type={card.type} owner={card.owner} cardNumber={card.cardNumber} securityCode={card.securityCode} expiration={card.expiration}/>
     })
 
-    function passCard (card) {
+    function formCardData (card) {
         return setCards([...cards, card])
     }
 
@@ -23,7 +23,7 @@ function CardParent () {
         <div>
             <h2 id="cardInfoHeading">Card Information</h2>
             {displayCards}
-            <CardForm passCard={passCard}/>
+            <CardForm formCardData={formCardData}/>
         </div>
     )
 }

@@ -1,14 +1,14 @@
 import React from "react"
 
-function CartCard({ image2, name2, price2, quantity2 }) {
+function CartCard({ image, name, price, quantity }) {
     
     return(
         <div>
             <ul class="cartItem">
-                <img src={image2} alt={name2} class="cartImg"/>
-                <h4>{name2}</h4>
-                <p class="cartPrice">${price2}</p>
-                <p class="cartQuantity">Quantity: {quantity2}</p>
+                <img src={image} alt={name} class="cartImg"/>
+                <h4>{name}</h4>
+                <p class="cartPrice">${price}</p>
+                <p class="cartQuantity">Quantity: {quantity}</p>
             </ul>
         </div>
     )

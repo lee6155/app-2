@@ -12,15 +12,15 @@ function Cart() {
     },[]) 
 
     const renderCart = cartData.map(function(cartItem) {
-        return <CartCard key={cartItem.id} image2={cartItem.image2} name2={cartItem.name2} price2={cartItem.price2} quantity2={cartItem.quantity2}/>
+        return <CartCard key={cartItem.id} image={cartItem.image} name={cartItem.name} price={cartItem.price} quantity={cartItem.quantity}/>
     })
 
     const priceArray = cartData.map(function(cartItem) {
-        return cartItem.price2
+        return cartItem.price
     })
 
     const quantityArray = cartData.map(function(cartItem) {
-        return Number(cartItem.quantity2)
+        return Number(cartItem.quantity)
     })
 
     let total = 0

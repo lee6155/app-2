@@ -13,26 +13,26 @@ function HomePage() {
         .then(data => setItemsState(data))
     },[])
 
-    let displayItems
+    let filteredItems
     category !== "All"?
-        displayItems = items.filter(function(item) {
+        filteredItems = items.filter(function(item) {
             return item.category === category
         }) : 
-        displayItems = items
+        filteredItems = items
     
-    let displayItems2 = displayItems.map(function(item) {
+    let displayItems = filteredItems.map(function(item) {
         return <ItemCard key={item.id} id={item.id} name={item.name} image={item.image} price={item.price}/>
     })
 
-    function passCategory(newState) {
-        return setCategory(newState)
+    function categoryFromDropdown(selected) {
+        return setCategory(selected)
     }
 
     return(
         <div>
             <NavBar/>
-            <CategoryFilter passCategory={passCategory}/>
-            {displayItems2}
+            <CategoryFilter categoryFromDropdown={categoryFromDropdown}/>
+            {displayItems}
         </div>
     )
 }

@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 
-function CardForm ({ passCard }) {
+function CardForm ({ formCardData }) {
 
     const [type, setType] = useState("")
-    const [name2, setName] = useState("")
+    const [owner, setOwner] = useState("")
     const [number, setNumber] = useState("")
     const [code, setCode] = useState("")
     const [expiration, setExpiration] = useState("")
@@ -12,8 +12,8 @@ function CardForm ({ passCard }) {
         setType(event.target.value)
     }
 
-    function handleChangeName (event) {
-        setName(event.target.value)
+    function handleChangeOwner (event) {
+        setOwner(event.target.value)
     }
 
     function handleChangeNumber (event) {
@@ -32,7 +32,7 @@ function CardForm ({ passCard }) {
         event.preventDefault()
         let cardData = {
             type: type,
-            owner: name2,
+            owner: owner,
             cardNumber: number,
             securityCode: code,
             expiration: expiration
@@ -44,17 +44,17 @@ function CardForm ({ passCard }) {
                 "Content-Type": "application/json",
             },
             body: {
-                "type2": "string",
-                "name3": "string",
-                "number2": "string",
-                "code2": "string",
-                "expiration2": "string",
+                "type": "string",
+                "owner": "string",
+                "number": "string",
+                "code": "string",
+                "expiration": "string",
             },
             body: JSON.stringify(cardData)
         })
         .then((response) => response.json())
         .then(function(data) {
-            return passCard(data)
+            return formCardData(data)
         })
     }
 
@@ -70,7 +70,7 @@ function CardForm ({ passCard }) {
                         <option>Debit</option>
                     </select>
                 </label>
-                <label class="cardFormInfo" value={name2} onChange={handleChangeName}>
+                <label class="cardFormInfo" value={owner} onChange={handleChangeOwner}>
                     Name on Card:
                     <input type="text" placeholder="Enter name here" class="cardFormInput"/>
                 </label>

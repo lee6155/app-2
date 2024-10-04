@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-function AddressForm ({ passAddress }) {
+function AddressForm ({ formAddressData }) {
 
     const [name, setName] = useState("")
     const [street, setStreet] = useState("")
@@ -62,7 +62,7 @@ function AddressForm ({ passAddress }) {
         })
         .then((response) => response.json())
         .then(function(data) {
-            return passAddress(data)
+            return formAddressData(data)
         })
     }
 

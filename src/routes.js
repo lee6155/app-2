@@ -23,3 +23,5 @@ const routes = [
 ]
 
 export default routes
+
+// app common parent, fewer GET requests, heavy refactoring
